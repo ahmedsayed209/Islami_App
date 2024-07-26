@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ApplicationThemeManager {
+  static const Color PrimaryColor = Color(0xFFB7935F);
   static final ThemeData lightThemeData = ThemeData(
+    primaryColor:PrimaryColor ,
       scaffoldBackgroundColor: Colors.transparent,
       appBarTheme: AppBarTheme(
           color: Colors.transparent,
@@ -11,7 +13,7 @@ class ApplicationThemeManager {
               fontSize: 30,
               color: Colors.black)),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        backgroundColor: Color(0xFFB7935F),
+        backgroundColor:PrimaryColor,
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Color(0xFF707070),
         selectedIconTheme: IconThemeData(
@@ -55,7 +57,11 @@ class ApplicationThemeManager {
           fontSize: 16,
           color: Colors.black),
 
-    )
+    ),
+    dividerTheme: DividerThemeData(
+      color: PrimaryColor,
+      thickness: 5
+    ),
 
   );
 }
