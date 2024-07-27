@@ -72,7 +72,6 @@ class _quranDetailsViewState extends State<quranDetailsView> {
     versesList = content.split("\n");
     setState((){});
     print(content);
-
   }
 
 }
