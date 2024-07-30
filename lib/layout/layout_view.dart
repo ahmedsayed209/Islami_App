@@ -14,7 +14,7 @@ class layout_view extends StatefulWidget {
 }
 
 class _layout_viewState extends State<layout_view> {
-  int stateIndex = 2;
+  int stateIndex = 0;
   List<Widget> selectedWidget = [
     hadithView(),
     quranView(),
